@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+    <script type="text/javascript">
+    var t0 = Date.now()
+    console.log(`JS later`);
+    console.log(`starting at ${t0}`)
+    </script>
+</head>
+<body>
+    <img src="https://extraimage.net/images/2018/06/05/f8723bfe3e865fbd44f61648237af77a.png" alt="" srcset="">
+    <img src="https://extraimage.net/images/2018/06/05/b081118b0204aca7ad4fb602bde08330.png" alt="" srcset="">
+</body>
+
+<script src="script.js"></script>
+<script type="text/javascript">
+    var t1 = Date.now();
+    var delta = t1 -t0;
+    console.log(`Finishing all at ${t1}`);
+    console.log(`Delta head-body: ${delta}`);
+</script>
+
+</html>
